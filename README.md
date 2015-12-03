@@ -1,4 +1,8 @@
-This is the main repository for the BioCADDIE Harvester project: 
+This is the main repository for the BioCADDIE Harvester project
+
+__NOTE__: the start date of the project has been delayed, expect to
+see more action here the beginning of 2016! The GitHub tickets will be
+adjusted accordingly.
 
 # Description
 
