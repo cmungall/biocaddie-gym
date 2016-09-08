@@ -1,0 +1,28 @@
+{
+    "@context": {
+        "dc": "http://purl.org/dc/terms/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dct": "http://purl.org/dc/terms/",
+        "faldo": "http://biohackathon.org/resource/faldo#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "idot": "http://identifiers.org/",
+        "oa": "http://www.w3.org/ns/oa#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "void": "http://rdfs.org/ns/void#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+        "dctypes": "http://purl.org/dc/dcmitype/",
+        "pav": "http://purl.org/pav/",
+        
+        "datasets": "dct:FOOBAR",
+        "identifier": "dct:identifier",
+        "issued" : "dct:issued",
+        "description" : "dc:description",
+        "license" : "dct:license",
+        "page" : "foaf:page",
+        "accessURL" : "dcat:accessURL"
+    }
+}
