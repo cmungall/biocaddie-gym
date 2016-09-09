@@ -16,8 +16,8 @@ import json
 
 def main():
 
-    parser = argparse.ArgumentParser(description='OBO'
-                                                 'Helper utils for OBO',
+    parser = argparse.ArgumentParser(description='harvester'
+                                                 'Harvests MD-YAML files using github search results',
                                      formatter_class=argparse.RawTextHelpFormatter)
 
 
@@ -37,19 +37,23 @@ def main():
             if path.startswith('_metadata'):
                 repo = item['repository']
                 reponame = repo['full_name']
-                raw = 'https://raw.githubusercontent.com/' + reponame + '/gh-pages/' + path
-                raws.append(raw)
+                rawurl = 'https://raw.githubusercontent.com/' + reponame + '/gh-pages/' + path
+                raws.append(rawurl)
                 paths.append(path + reponame)
-    for url in raws:
-        with closing(requests.get(url, stream=False)) as resp:
-            print("  Got response for: "+url)
-            # TODO: redirects
-            ok = resp.status_code == 200
-            content = resp.text
-            print(content)
+                with closing(requests.get(rawurl, stream=False)) as resp:
+                    print("  Got response for: "+rawurl)
+                    # TODO: redirects
+                    ok = resp.status_code == 200
+                    content = resp.text
+                    fn = reponame + path
+                    fn = 'target/' +  fn.replace('/','-')
+                    print("SAVING TO "+fn)
+                    f=open(fn,'w')
+                    f.write(content)
+                    print(content)
+                    f.close()
             
-            sys.stdout.flush()
-        print(url)
+                    sys.stdout.flush()
 
 
 
