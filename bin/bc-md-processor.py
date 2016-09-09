@@ -4,16 +4,12 @@ __author__ = 'cjm'
 
 import argparse
 import logging
-
-#from yaml import load, dump
-#from yaml import Loader, Dumper
 import yaml
 from json import dumps
 
 def main():
 
-    parser = argparse.ArgumentParser(description='OBO'
-                                                 'Helper utils for OBO',
+    parser = argparse.ArgumentParser(description='YAML tools for BioCaddie',
                                      formatter_class=argparse.RawTextHelpFormatter)
 
 
@@ -21,9 +17,8 @@ def main():
     
     # SUBCOMMAND
     parser_n = subparsers.add_parser('validate', help='validate yml inside md')
-    ##parser_n.add_argument('-d', '--depth', type=int, help='number of hops')
     parser_n.set_defaults(function=validate_markdown)
-    parser_n.add_argument('files',nargs='*')
+    parser_n.add_argument('files', nargs='*')
 
     # SUBCOMMAND
     parser_n = subparsers.add_parser('concat', help='concat metadata yamls')
@@ -67,18 +62,7 @@ def validate_markdown(args):
 
 def validate_structure(obj,md):
     errs = []
-    is_obs = False
-    if 'id' not in obj:
-        errs.append("No id: ")
-    if 'is_obsolete' in obj:
-        is_obs = True
-    id = obj['id']
-    if 'title' not in obj:
-        errs.append("No title: "+id)
-    #if 'description' not in obj:
-    #    errs.append("No description: "+id+" " + ("OBS" if is_obs else ""))
-    if 'layout' not in obj:
-        errs.append("No layout tag: "+id+" -- this is required for proper rendering")
+    #TODO put some biocaddie specific validation here
     return errs
 
 def concat_metadata_yaml(args):
@@ -116,53 +100,6 @@ def concat_metadata_yaml(args):
     #f.write(yaml.dump(cfg))
     return cfg
 
-def decorate_metadata(objs):
-    """
-    See:
-    """
-    for obj in objs:
-        if 'license' in obj:
-            # https://creativecommons.org/about/downloads
-            license = obj['license']
-            lurl = license['url']
-            logo = ''
-            # TODO: decide on canonical URI to use for CC licenses;
-            #  ultimately this should all be specified in RDF/JSON-LD.
-            #  e.g. <http://creativecommons.org/licenses/by/3.0> foaf:depictedBy < ... > .
-            #  e.g. <http://creativecommons.org/licenses/by/3.0> owl:sameAs <https://creativecommons.org/licenses/by/3.0> .
-            if lurl.find('creativecommons.org/licenses/by/') > 0:
-                logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png'
-            if lurl.find('creativecommons.org/publicdomain/zero/') > 0:
-                logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png'
-            if not logo == '':
-                license['logo'] = logo
-        if 'products' in obj:
-            # decorate top-level ontology; but only if it has at least one product
-            decorate_entry(obj, ".owl")
-            for product in obj['products']:
-                decorate_entry(product)
-
-def decorate_entry(obj, suffix=""):
-    """
-    Decorates EITHER an ontology metadata object OR a product object with a purl.
-    
-    Each object has an identifier which either identifies the ontology sensu grouping
-    project (e.g. 'go') or a specific product (e.g. 'go.obo' or 'go.owl').
-
-    By default each id is prefixed with the OBO prefix (unless is has an alternate prefix,
-    in which case it is effectively ignored).
-    """
-    id = obj['id']
-    if not('is_obsolete' in obj):
-        if has_obo_prefix(obj):
-            obj['ontology_purl'] = "http://purl.obolibrary.org/obo/" + id + suffix
-
-
-def has_obo_prefix(obj):
-    return ('uri_prefix' not in obj) or (obj['uri_prefix'] == 'http://purl.obolibrary.org/obo/')
-
-def has_a_product(obj):
-    return 'products' in obj and len(obj['products']) > 0
 
 def concat_principles_yaml(args):
     objs = []
@@ -211,26 +148,8 @@ def extract(mdtext):
                 mlines.append(line)
     yamltext = "\n".join(ylines)
     obj = yaml.load(yamltext)
-    return (obj, "\n".join(mlines))
+    return obj, "\n".join(mlines)
 
-def write_legacy_metadata_objects(onts, stream):
-    """
-    write to the old ontologies.txt format
-    """
-    for ont in onts:
-        write_legacy_metadata_object(ont, stream)
-
-def write_legacy_metadata_object(ont, stream):
-    """
-    write to the old ontologies.txt format (single object) - TODO
-    """
-    write_pv('id', ont['id'], stream)
-    write_pv('title', ont['title'], stream)
-    write_pv('namespace', ont['id'].upper, stream)
-    write_pv('foundry', ont['is_foundry'], stream)
-
-def write_pv(k,v,s):
-    s.write(p + "\t" + v)
 
 if __name__ == "__main__":
     main()
