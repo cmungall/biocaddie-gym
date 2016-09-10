@@ -8,7 +8,6 @@ import requests
 from contextlib import closing
 
 import sys
-import yaml
 import json
 
 # curl -H "Authorization: token $GITHUB_TOKEN" 'https://api.github.com/search/code?q="index%3A+biocaddie"'
@@ -28,35 +27,60 @@ def main():
 
     paths = []
     raws = []
-    for fn in args.files:
-        f = open(fn, 'r') 
-        obj = json.load(f)
-        f.close()
-        for item in obj['items']:
-            path = item['path']
-            if path.startswith('_metadata'):
-                repo = item['repository']
-                reponame = repo['full_name']
-                rawurl = 'https://raw.githubusercontent.com/' + reponame + '/gh-pages/' + path
-                raws.append(rawurl)
-                paths.append(path + reponame)
-                with closing(requests.get(rawurl, stream=False)) as resp:
-                    print("  Got response for: "+rawurl)
-                    # TODO: redirects
-                    ok = resp.status_code == 200
-                    content = resp.text
-                    fn = reponame + path
-                    fn = 'target/' +  fn.replace('/','-')
-                    print("SAVING TO "+fn)
-                    f=open(fn,'w')
-                    f.write(content)
-                    print(content)
-                    f.close()
+    travisurls = []
+
+    repos = search_repos()
+    for repo in repos:
+        urls = get_md_urls(repo)
+        for url in urls:
+            #travisurl = 'https://travis-ci.org/' + reponame
+            #travisurls.append(travisurl)
+            with closing(requests.get(url, stream=False)) as resp:
+                #print("  Got response for: "+rawurl)
+                # TODO: redirects
+                ok = resp.status_code == 200
+                content = resp.text
+                fn = url.replace('https://raw.githubusercontent.com/',"")
+                fn = 'target/' +  fn.replace('/','-')
+                #print("SAVING TO "+fn)
+                f=open(fn,'w')
+                f.write(content)
+                #print(content)
+                f.close()
             
-                    sys.stdout.flush()
+    #for url in travisurls:
+    #    print(' * [![Build Status](%s.svg?branch=gh-pages)](%s)' % (url,url))
 
-
-
+def search_repos():
+    url = 'https://api.github.com/search/repositories?q=biocaddie+in:readme+fork:true'
+    names = []
+    with closing(requests.get(url, stream=False)) as resp:
+        ok = resp.status_code == 200
+        content = resp.text
+        results = json.loads(content)
+        items = results['items']
+        for item in items:
+            full_name = item['full_name']
+            names.append(full_name)
+    return names
+    
+def get_md_urls(repo):
+    url = 'https://api.github.com/repos/'+repo+'/contents/_metadata?ref=gh-pages'
+    urls = []
+    with closing(requests.get(url, stream=False)) as resp:
+        ok = resp.status_code == 200
+        if ok:
+            print("Fetching files from "+url)
+            content = resp.text
+            results = json.loads(content)
+            for item in results:
+                urls.append(item['download_url'])
+        else:
+            print("oops: "+url)
+    return urls
+            
+            
+        
 if __name__ == "__main__":
     main()
 

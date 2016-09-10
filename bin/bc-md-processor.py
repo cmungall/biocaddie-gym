@@ -92,6 +92,14 @@ def concat_metadata_yaml(args):
         else:
           library.append(obj)
     objs = foundry + library + obsolete
+
+    # hack 
+    dateFields = ['date']
+    for field in dateFields:
+        for obj in objs:
+            if field in obj:
+                obj[field] = "date "+str(obj[field])
+
     cfg['datasets'] = objs
     if '@context' in ctxt:
         cfg['@context'] = ctxt['@context']
