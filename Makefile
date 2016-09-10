@@ -21,5 +21,5 @@ harvest:
 	./bin/harvester.py $<
 
 # finally, iterate through all MDs and make a json-ld file and report file
-harvested.json: 
+aggregated-metadata.jsonld: 
 	./bin/bc-md-processor.py concat target/*.md -o $@ > harvest.md

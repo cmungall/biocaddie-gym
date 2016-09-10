@@ -19,21 +19,23 @@ def main():
                                                  'Harvests MD-YAML files using github search results',
                                      formatter_class=argparse.RawTextHelpFormatter)
 
-
     parser.add_argument('files',nargs='*')
-
 
     args = parser.parse_args()
 
     paths = []
     raws = []
     travisurls = []
-
+    
     repos = search_repos()
     for repo in repos:
+        travisurl = 'https://travis-ci.org/' + repo
+        
         urls = get_md_urls(repo)
+        if len(urls) > 0:
+            travisurls.append(travisurl)
+
         for url in urls:
-            #travisurl = 'https://travis-ci.org/' + reponame
             #travisurls.append(travisurl)
             with closing(requests.get(url, stream=False)) as resp:
                 #print("  Got response for: "+rawurl)
@@ -47,9 +49,12 @@ def main():
                 f.write(content)
                 #print(content)
                 f.close()
-            
-    #for url in travisurls:
-    #    print(' * [![Build Status](%s.svg?branch=gh-pages)](%s)' % (url,url))
+
+    f=open('report.md','w')
+    for url in travisurls:
+        f.write(' * [![Build Status](%s.svg?branch=gh-pages)](%s)' % (url,url))
+        f.write("\n")
+    f.close()
 
 def search_repos():
     url = 'https://api.github.com/search/repositories?q=biocaddie+in:readme+fork:true'
@@ -62,6 +67,7 @@ def search_repos():
         for item in items:
             full_name = item['full_name']
             names.append(full_name)
+            
     return names
     
 def get_md_urls(repo):
