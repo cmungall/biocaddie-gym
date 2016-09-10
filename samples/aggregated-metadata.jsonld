@@ -1,0 +1,2276 @@
+{
+    "@context": {
+        "accessURL": "dcat:accessURL",
+        "datasets": "dct:FOOBAR",
+        "dc": "http://purl.org/dc/terms/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dct": "http://purl.org/dc/terms/",
+        "dctypes": "http://purl.org/dc/dcmitype/",
+        "description": "dc:description",
+        "faldo": "http://biohackathon.org/resource/faldo#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "identifier": "dct:identifier",
+        "idot": "http://identifiers.org/",
+        "issued": "dct:issued",
+        "license": "dct:license",
+        "oa": "http://www.w3.org/ns/oa#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "page": "foaf:page",
+        "pav": "http://purl.org/pav/",
+        "prov": "http://www.w3.org/ns/prov#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "void": "http://rdfs.org/ns/void#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "datasets": [
+        {
+            "categories": "Exposome Phenotype Genotype",
+            "date": "date 2015-05-20",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "title": "My DataSet1"
+        },
+        {
+            "categories": "Exome Genome Human Analysis",
+            "date": "date 2015-05-20",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "title": "My DataSet2"
+        },
+        {
+            "categories": "Exposome Phenotype Genotype",
+            "date": "date 2015-05-20",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "title": "My DataSet1"
+        },
+        {
+            "categories": "Exome Genome Human Analysis",
+            "date": "date 2015-05-20",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "title": "My DataSet2"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000169",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4277",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay \u2013 mCF73",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000178",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4421",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF100",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000179",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4432",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF103",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000180",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4443",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF106",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000181",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4454",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF109",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000182",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4464",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF112",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000183",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4475",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF113",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000184",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4485",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF114",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000185",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4496",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF144",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000186",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4505",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF149",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000187",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4516",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF70",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000188",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4527",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF101",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000189",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4530",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF102",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000190",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4533",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF105",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000191",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4536",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF108",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000193",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4542",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF116",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000194",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4545",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF119",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000195",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4548",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF120",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000197",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4554",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF124",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000198",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4557",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF125",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000199",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4560",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF126",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000202",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4577",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF133",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000204",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4583",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF135",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000205",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4586",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF136",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000206",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4589",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF137",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000207",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4592",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF142",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000208",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4595",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF143",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000209",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4600",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF71",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000210",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4605",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF72",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000211",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4608",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF75",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000212",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4611",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF76",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000213",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4614",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF77",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000214",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4617",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF84",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000215",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4620",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF85",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000217",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4626",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF87",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000218.03",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12940",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF88",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000218",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4629",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF88",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000220.03",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12947",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF90",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000220",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4635",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF90",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000223",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4644",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF93",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000224",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4647",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF94",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000225",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4650",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF95",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000226",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4653",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF96",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000229",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4663",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF115",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000245",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4737",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF92",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000247",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4755",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF131",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000248",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4764",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF134",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000250",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4786",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF121",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000251",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4797",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF86",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000252",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4808",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF89",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000253",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4819",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF91",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "ChIP-Seq"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000263",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4894",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "ChIP seq analysis of p300 bound regions in E13.5 mouse palates",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "RNA-Seq"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000278.02",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=10389",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "RNA-Seq analysis in E13.5 mouse palates",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "RNA-Seq"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000278",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=5549",
+            "references": "PMID:18836445",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "RNA-Seq analysis in E13.5 mouse palates",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000692.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12935",
+            "references": "PMID:24159048",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF69",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000693.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12954",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF152",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000694.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12959",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF159",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000695.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12964",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF160",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000696.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12969",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF162",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000697.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12974",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF161",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000698.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12979",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF170",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000699.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12984",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF171",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000700.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12990",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF172",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000701.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=12995",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF175",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000702.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13000",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF191",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000703.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13006",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF195",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000704.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13011",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF205",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000705.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13016",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF206",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000706.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13021",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF208",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000707.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13026",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF219",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000709.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13036",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mCF224",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000710.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13041",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mAN261",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000711.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13046",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mAN330",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000712.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13051",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mAN32",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000713.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13056",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "Transgenic Mouse Enhancer Assay -- mAN327",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data",
+                "OPT images"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000715.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13066",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:9606",
+            "title": "Transgenic Human Enhancer Assay -- UL198",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "Enhancer reporter data"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000716.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13071",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:9606",
+            "title": "Transgenic Human Enhancer Assay -- CF6",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "ChIP-Seq"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000782.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13558",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "ChIP seq analysis of p300 bound regions in E14.5 mouse palates",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "author": "Axel Visel",
+            "categories": "Exposome Phenotype Genotype",
+            "datatypes": [
+                "ChIP-Seq"
+            ],
+            "date": "date 2016-09-09",
+            "identifier": "FB00000783.01",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "https://www.facebase.org/data/record/#1/legacy:dataset/id=13566",
+            "rights": "https://www.facebase.org/methods/policies/",
+            "taxa": "NCBITaxon:10090",
+            "title": "ChIP seq analysis of p300 bound regions in E15.5 mouse palates",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "categories": "Exposome Phenotype Genotype",
+            "date": "date 2015-05-20",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "title": "My DataSet1"
+        },
+        {
+            "categories": "Exome Genome Human Analysis",
+            "date": "date 2015-05-20",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "title": "My DataSet2"
+        },
+        {
+            "accessURL": "http://www.animalgenome.org/QTLdb/export/KSUI8GFHOT6/cattle_QTLdata.txt",
+            "alternativeTitle": "Animal QTLdb",
+            "date": "date 2016-08-24",
+            "identifier": "http://doi.org/10.17616/R3HW4X",
+            "index": "biocaddie",
+            "issued": "2016-08-24",
+            "keywords": [
+                "genomics",
+                "permuation",
+                "gene association information",
+                "genetics",
+                "single-nucleotide polymorphism",
+                "comparative genomics",
+                "bioinformatics"
+            ],
+            "layout": "dataset",
+            "page": "http://www.animalgenome.org/cgi-bin/QTLdb/index",
+            "rights": "http://www.animalgenome.org/QTLdb/faq#23",
+            "taxa": [
+                "NCBITaxon:9823",
+                "NCBITaxon:9913",
+                "NCBITaxon:9031",
+                "NCBITaxon:9940",
+                "NCBITaxon:8022"
+            ],
+            "title": "Animal Quantitative Trait Loci",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://thebiogrid.org/downloads/archives/Latest%20Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip",
+            "alternativeTitle": "BioGRID",
+            "conformsTo": [
+                "Mosquito Insecticide Resistance Ontology",
+                "Molecular Interaction Tabular",
+                "Molecular Interaction eXtensible Markup Language"
+            ],
+            "date": "date 2016-08-24",
+            "identifier": "http://doi.org/10.17616/R34C7G",
+            "index": "biocaddie",
+            "issued": "2016-08-24",
+            "keywords": [
+                "Gene",
+                "Interactions",
+                "Protein",
+                "protein and genetic interactions"
+            ],
+            "layout": "dataset",
+            "license": "http://wiki.thebiogrid.org/doku.php/terms_and_conditions",
+            "page": "http://thebiogrid.org/",
+            "references": [
+                "PMID:16381927"
+            ],
+            "taxa": [
+                "NCBITaxon:3702",
+                "NCBITaxon:7227",
+                "NCBITaxon:4932",
+                "NCBITaxon:4896"
+            ],
+            "title": "Biological General Repository for Interaction Datasets",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "ftp://ftp.ncbi.nlm.nih.gov/pub/CCDS/current_human/CCDS2UniProtKB.20150512.txt",
+            "date": "date 2015-08-20",
+            "id": "cgd",
+            "identifier": "cgd",
+            "index": "biocaddie",
+            "issued": "2015-08-20",
+            "layout": "dataset",
+            "page": "http://ga4gh.org",
+            "title": "cgd",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz",
+            "alternativeTitle": "National Center for Biotechnology Information",
+            "conformsTo": [
+                "Sequence Ontology",
+                "Human Phenotype Ontology",
+                "Systematized Nomenclature of Medicine-Clinical Terms",
+                "Human Genome Organization Gene Symbols",
+                "Variant Call Format"
+            ],
+            "date": "date 2015-11-21",
+            "identifier": "biodbcore-000739",
+            "index": "biocaddie",
+            "issued": "2015-11-21",
+            "keywords": [
+                "Biomedical Science",
+                "Clinical Data",
+                "Disease",
+                "Genome Variation  Genomics"
+            ],
+            "layout": "dataset",
+            "license": "http://www.ncbi.nlm.nih.gov/About/disclaimer.html",
+            "page": "http://www.ncbi.nlm.nih.gov/clinvar/",
+            "references": [
+                "PMID:24234437"
+            ],
+            "rights": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "taxa": [
+                "NCBITaxon:9606"
+            ],
+            "title": "ClinVar",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "file:///Users/cjm/repos/dataset-helper/monarch-datasets/NIGMS.csv",
+            "date": "date 2016-08-19",
+            "id": "coriell",
+            "identifier": "coriell",
+            "index": "biocaddie",
+            "issued": "2016-08-19",
+            "layout": "dataset",
+            "page": "http://ccr.coriell.org/",
+            "title": "Coriell",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz",
+            "alternativeTitle": "CTD",
+            "conformsTo": [
+                "NCBI Taxonomy",
+                "Gene Ontology",
+                "Disease Ontology",
+                "Medical Subject Headings",
+                "Online Mendelian Inheritance in Man Ontology",
+                "Exposure Ontology",
+                "Interaction Ontology"
+            ],
+            "date": "date \u20182014-07-26\u2019",
+            "identifier": "http://doi.org/10.17616/R3KS7N",
+            "index": "biocaddie",
+            "issued": "Tue-Jul-26-14-50-13-EDT-2016",
+            "keywords": [
+                "Biomedical Science",
+                "Chemical Entity",
+                "Chemical-Disease Relationship",
+                "Chemical-Gene Interactions",
+                "Disease Ontology",
+                "Drug Interactions",
+                "Environmental Science",
+                "Exposure Science",
+                "Gene",
+                "Gene Ontology Annotation",
+                "Gene-Disease Relationships",
+                "Molecular Interactions",
+                "Phenotype And Disease Association",
+                "Text Mining",
+                "Toxicogenomics",
+                "Toxicology"
+            ],
+            "layout": "dataset",
+            "license": "http://ctdbase.org/about/legal.jsp",
+            "page": "http://ctdbase.org",
+            "references": [
+                "PMID:23093600"
+            ],
+            "taxa": [
+                "NCBITaxon:9612",
+                "NCBITaxon:7955",
+                "NCBITaxon:6072",
+                "NCBITaxon:9031",
+                "NCBITaxon:9606",
+                "NCBITaxon:10090",
+                "NCBITaxon:10116"
+            ],
+            "title": "Comparative Toxicogenomics Database",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "id": "ensembl",
+            "identifier": "ensembl",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "http://uswest.ensembl.org",
+            "title": "ENSEMBL",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "jdbc:postgresql://nif-db.crbs.ucsd.edu:5432/disco_crawler",
+            "date": "date 2016-08-24",
+            "id": "eom",
+            "identifier": "eom",
+            "index": "biocaddie",
+            "issued": "2016-08-24",
+            "layout": "dataset",
+            "license": "http://www.genome.gov/copyright.cfm",
+            "page": "http://elementsofmorphology.nih.gov",
+            "rights": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "title": "EOM",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://www.ncbi.nlm.nih.gov/books/NBK97260",
+            "date": "date 2016-08-24",
+            "id": "genereviews",
+            "identifier": "genereviews",
+            "index": "biocaddie",
+            "issued": "2016-08-24",
+            "layout": "dataset",
+            "license": "http://www.ncbi.nlm.nih.gov/books/NBK138602/",
+            "page": "http://genereviews.org/",
+            "title": "Gene Reviews",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://www.geneontology.org/doc/GO.references",
+            "alternativeTitle": "GO",
+            "conformsTo": [
+                "Ontology for Genetic Interval",
+                "Chemical Entities of Biological Interest",
+                "Ontology for Biomedical Investigations",
+                "Cell Ontology",
+                "Gene Regulation Ontology",
+                "Evidence codes",
+                "UBER anatomy ONtology",
+                "Fission Yeast Phenotype Ontology",
+                "Gene Expression Ontology",
+                "Regulation of Gene Expression Ontolology",
+                "Regulation of Transcription Ontolology",
+                "Cellular Microscopy Phenotype Ontology"
+            ],
+            "date": "date 2016-08-24",
+            "identifier": "bsg-s000089",
+            "index": "biocaddie",
+            "issued": "2016-08-24",
+            "keywords": [
+                "Functional Annotation",
+                "Gene",
+                "Gene Ontology Biological Process",
+                "Protein",
+                "Transcript"
+            ],
+            "layout": "dataset",
+            "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "page": "http://www.geneontology.org",
+            "references": [
+                "PMID:10802651"
+            ],
+            "rights": "http://geneontology.org/page/use-and-license",
+            "taxa": [
+                "NCBITaxon:9606",
+                "NCBITaxon:10090",
+                "NCBITaxon:10116",
+                "NCBITaxon:7955",
+                "NCBITaxon:4896"
+            ],
+            "title": "Gene Ontology",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://www.ebi.ac.uk/gwas/api/search/downloads/alternative",
+            "date": "date 2016-08-24",
+            "id": "gwascatalog",
+            "identifier": "gwascatalog",
+            "index": "biocaddie",
+            "issued": "2016-08-24",
+            "layout": "dataset",
+            "license": "http://creativecommons.org/licenses/by/3.0/",
+            "page": "http://www.ebi.ac.uk/gwas/",
+            "title": "GWAS Catalog",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "ftp://ftp.ebi.ac.uk/pub/databases/genenames/new/tsv/hgnc_complete_set.txt",
+            "date": "date 2016-08-24",
+            "id": "hgnc",
+            "identifier": "hgnc",
+            "index": "biocaddie",
+            "issued": "2016-08-24",
+            "layout": "dataset",
+            "page": "http://www.genenames.org",
+            "title": "HGNC",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://compbio.charite.de/hudson/job/hpo.annotations/lastStableBuild/artifact/misc/phenotype_annotation.tab",
+            "alternativeTitle": "HPO",
+            "conformsTo": [
+                "Phenotype Fragment Ontology"
+            ],
+            "date": "date 2016-08-24",
+            "identifier": null,
+            "index": "biocaddie",
+            "issued": "2016-08-24",
+            "keywords": [
+                "Biomedical Science",
+                "Clinical Study",
+                "Genetics",
+                "Human Disease",
+                "Phenotype"
+            ],
+            "layout": "dataset",
+            "license": "http://www.human-phenotype-ontology.org/contao/index.php/legal-issues.html",
+            "page": "http://www.human-phenotype-ontology.org",
+            "references": [
+                "PMID:24217912"
+            ],
+            "taxa": [
+                "NCBITaxon:9606"
+            ],
+            "title": "Human Phenotype Ontology",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "ftp://ftp.ebi.ac.uk/pub/databases/impc/latest/csv/checksum.md5",
+            "date": "date 2016-08-25",
+            "id": "impc",
+            "identifier": "impc",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "layout": "dataset",
+            "license": "https://raw.githubusercontent.com/mpi2/PhenotypeArchive/master/LICENSE",
+            "page": "http://www.mousephenotype.org",
+            "title": "IMPC",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://rest.kegg.jp/link/pathway/hsa",
+            "date": "date 2016-08-24",
+            "id": "kegg",
+            "identifier": "kegg",
+            "index": "biocaddie",
+            "issued": "2016-08-24",
+            "layout": "dataset",
+            "page": "http://www.genome.jp/kegg/",
+            "rights": "http://www.kegg.jp/kegg/legal.html",
+            "title": "KEGG",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "jdbc:postgresql://mgi-adhoc.jax.org:5432/mgd",
+            "alternativeTitle": "MGI",
+            "conformsTo": [
+                "Minimal Information for Mouse Phenotyping Procedures",
+                "Gene Ontology",
+                "FASTA Sequence Format"
+            ],
+            "date": "date 2016-08-16",
+            "identifier": "http://doi.org/10.17616/R35P54",
+            "index": "biocaddie",
+            "issued": "2016-08-16",
+            "keywords": [
+                "genetics",
+                "sequences",
+                "genomic maps",
+                "gene expression",
+                "disease models",
+                "Allele Data",
+                "Chromosomal Element Nomenclature",
+                "Cytogenic Markers",
+                "Disease Model",
+                "Gene Ontology Annotation",
+                "Gene Nomenclature",
+                "Mutant",
+                "Phenotype",
+                "Polymorphisms (SNPs And Indels)",
+                "Quantitative Trait Loci"
+            ],
+            "layout": "dataset",
+            "license": "http://www.informatics.jax.org/mgihome/other/copyright.shtml",
+            "page": "http://www.informatics.jax.org/",
+            "references": [
+                "PMID:15608240"
+            ],
+            "taxa": [
+                "NCBITaxon:10090"
+            ],
+            "title": "Mouse Genome Informatics",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "id": "mgi_slim",
+            "identifier": "mgi_slim",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "http://www.mousemine.org/mousemine/service",
+            "title": "MGISlim",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "https://www.mmrrc.org/about/mmrrc_catalog_data.csv",
+            "date": "date 2016-08-25",
+            "id": "mmrrc",
+            "identifier": "mmrrc",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "layout": "dataset",
+            "license": "https://www.mmrrc.org/about/data_download.php",
+            "page": "https://www.mmrrc.org",
+            "title": "Mutant Mouse Regional Resource Centers",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "id": "http://doi.org/10.17616/R31M09",
+            "index": "biocaddie",
+            "keywords": [
+                "gene expression",
+                "orthology",
+                "genotype",
+                "disease",
+                "drug",
+                "mutation",
+                "human gene function abnormalities in mouse",
+                "abnormalities in zebrafish",
+                "abnormalities in flies",
+                "genetics",
+                "pathways",
+                "phenotypes strain",
+                "anatomy"
+            ],
+            "layout": "dataset",
+            "license": "http://creativecommons.org/licenses/by/4.0/",
+            "page": "http://www.monarchinitiative.org",
+            "taxa": [
+                "NCBITaxon:9606 - NCBITaxon:10090 - NCBITaxon:10116 - NCBITaxon:7955 - NCBITaxon:4896"
+            ],
+            "title": "The Monarch Initiative",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/cytoBand.txt.gz",
+            "date": "date 2016-08-25",
+            "id": "monochrom",
+            "identifier": "monochrom",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "layout": "dataset",
+            "license": "http://creativecommons.org/licenses/by/4.0/",
+            "page": "http://monarchinitiative.org",
+            "title": "Monarch Chromosome Ontology",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://phenomedoc.jax.org/MPD_downloads/strainmeans.csv.gz",
+            "date": "date 2016-08-25",
+            "id": "mpd",
+            "identifier": "mpd",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "layout": "dataset",
+            "page": "http://phenome.jax.org",
+            "title": "MPD",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://ftp.ncbi.nih.gov/gene/DATA/gene_history.gz",
+            "date": "date 2016-08-25",
+            "id": "ncbigene",
+            "identifier": "ncbigene",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "layout": "dataset",
+            "license": "http://www.ncbi.nlm.nih.gov/About/disclaimer.html",
+            "page": "http://ncbi.nih.nlm.gov/gene",
+            "rights": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "title": "National Center for Biotechnology Information",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://omia.angis.org.au/dumps/omia.xml.gz",
+            "alternativeTitle": "OMIA",
+            "date": "date 2016-08-25",
+            "identifier": "http://doi.org/10.17616/R3VW5D",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "keywords": [
+                "animal genetics",
+                "chromosome abnormalities",
+                "genomics",
+                "phenotype",
+                "gene expression proteins",
+                "protein binding",
+                "bioinformatics",
+                "Trait"
+            ],
+            "layout": "dataset",
+            "page": "http://omia.angis.org.au",
+            "references": [
+                "PMID:16381939"
+            ],
+            "rights": "http://sydney.edu.au/disclaimer.shtml",
+            "taxa": [
+                "NCBITaxon:33208"
+            ],
+            "title": "Online Mendelian Inheritance in Animals",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://data.omim.org/downloads/JjLMJro3QFeWQ6nXGRKeRA/morbidmap.txt",
+            "alternativeTitle": "OMIM",
+            "conformsTo": [
+                "Human Phenotype Ontology",
+                "Online Mendelian Inheritance in Man Ontology"
+            ],
+            "date": "date 2016-08-25",
+            "identifier": null,
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "keywords": [
+                "Biomedical Science",
+                "Disease",
+                "Genetic Disorder",
+                "Human genes",
+                "Genetic phenotypes",
+                "Genetic medicine"
+            ],
+            "layout": "dataset",
+            "license": "http://omim.org/help/agreement",
+            "page": "http://www.omim.org",
+            "references": [
+                "PMID:25428349"
+            ],
+            "taxa": [
+                "NCBITaxon:9606"
+            ],
+            "title": "Online Mendelian Inheritance in Man",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://www.orphadata.org/data/xml/en_product6.xml",
+            "conformsTo": [
+                "International Classification of Diseases Version 10",
+                "Human Phenotype Ontology"
+            ],
+            "date": "date 2016-08-25",
+            "identifier": null,
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "keywords": [
+                "Disease",
+                "Drug"
+            ],
+            "layout": "dataset",
+            "license": "http://creativecommons.org/licenses/by-nd/3.0/",
+            "page": "http://www.orpha.net",
+            "references": [
+                "PMID:19058507"
+            ],
+            "rights": "http://omim.org/help/agreement",
+            "taxa": [
+                "NCBITaxon:9606"
+            ],
+            "title": "Orphanet",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "ftp://ftp.pantherdb.org/ortholog/current_release/RefGenomeOrthologs.tar.gz",
+            "date": "date 2016-08-25",
+            "id": "panther",
+            "identifier": "panther",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "layout": "dataset",
+            "license": "http://www.pantherdb.org/terms/disclaimer.jsp",
+            "page": "http://pantherdb.org/",
+            "title": "Protein ANalysis THrough Evolutionary Relationships",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://www.reactome.org/download/current/Ensembl2Reactome.txt",
+            "date": "date 2016-06-28",
+            "id": "reactome",
+            "identifier": "reactome",
+            "index": "biocaddie",
+            "issued": "2016-06-28",
+            "layout": "dataset",
+            "license": "http://reactome.org/pages/about/license-agreement/",
+            "page": "http://reactome.org/",
+            "title": "Reactome",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://hgdownload.cse.ucsc.edu/goldenPath/equCab2/database/cytoBandIdeo.txt.gz",
+            "date": "date 2016-08-25",
+            "id": "ucscbands",
+            "identifier": "ucscbands",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "layout": "dataset",
+            "license": "http://genome.ucsc.edu/license/",
+            "page": "http://hgdownload.cse.ucsc.edu",
+            "title": "UCSC Cytogenic Bands",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://zfin.org/downloads",
+            "alternativeTitle": "ZFIN",
+            "conformsTo": [
+                "Biological SPatial Ontology",
+                "Zebrafish anatomy and development",
+                "Phenotypic QualiTy Ontology",
+                "Gene Ontology"
+            ],
+            "date": "date \u20182016-08-25\u2019",
+            "identifier": "http://doi.org/10.17616/R3CK5Z",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "keywords": [
+                "Biology",
+                "Animal Genetics",
+                "Allele",
+                "Disease",
+                "Expression data",
+                "Gene",
+                "Mutant",
+                "Phenotype"
+            ],
+            "layout": "dataset",
+            "license": "http://zfin.org/warranty.html",
+            "page": "http://www.zfin.org",
+            "references": [
+                "PMID:16381936"
+            ],
+            "taxa": [
+                "NCBITaxon:7955"
+            ],
+            "title": "The Zebrafish Model Organism Database",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "https://zfin.org/downloads/phenoGeneCleanData_fish.txt",
+            "date": "date 2016-08-25",
+            "id": "zfin_slim",
+            "identifier": "zfin_slim",
+            "index": "biocaddie",
+            "issued": "2016-08-25",
+            "layout": "dataset",
+            "page": "http://zfin.org/",
+            "title": "ZFINSlim",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "https://www.facebase.org/data/search/",
+            "date": "date \u20182016-09-08\u2019",
+            "identifier": "biodbcore-000728",
+            "index": "biocaddie",
+            "keywords": [
+                "Biomedical Science",
+                "ChIP-Seq",
+                "Craniofacial Development",
+                "Craniofacial Malformation",
+                "Imaging",
+                "Microarray Data",
+                "RNA-Seq"
+            ],
+            "layout": "dataset",
+            "license": "https://www.facebase.org/methods/policies/",
+            "page": "https://www.facebase.org/",
+            "taxa": [
+                "NCBITaxon:7955",
+                "NCBITaxon:9606",
+                "NCBITaxon:10090"
+            ],
+            "title": "FaceBase",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "categories": "Exposome Phenotype Genotype",
+            "date": "date 2015-05-20",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "title": "My DataSet1"
+        },
+        {
+            "categories": "Exome Genome Human Analysis",
+            "date": "date 2015-05-20",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "title": "My DataSet2"
+        },
+        {
+            "accessURL": "http://amnh.begoniasociety.org/dwc/AEC-DBCNet_DwC-A20160308.zip",
+            "browseURL": "http://www.globalbioticinteractions.org/?interactionType=interactsWith&accordingTo=Digital%20Bee%20Collections%20Network",
+            "date": "date 2016-09-09",
+            "index": "biocaddie",
+            "keywords": [
+                "species",
+                "interactions",
+                "biotic",
+                "associations"
+            ],
+            "layout": "dataset",
+            "taxa": [
+                "NCBITaxon:7458",
+                "NCBITaxon:33090"
+            ],
+            "title": "Digital Bee Collections Network, 2014 (and updates). Version: 2016-03-08. National Science Foundation grant DBI 0956388. Accessed at http://amnh.begoniasociety.org/dwc/AEC-DBCNet_DwC-A20160308.zip",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://sourceforge.net/projects/gemina/files/gemina%20database/gemina_complete_infection_dump_2008-01-03/gemina_search_2008-01-03.txt/download",
+            "browseURL": "http://www.globalbioticinteractions.org/?interactionType=interactsWith&accordingTo=http%3A%2F%2Fdx.doi.org%2F10.1093%2Fnar%2Fgkp832",
+            "date": "date 2016-09-09",
+            "index": "biocaddie",
+            "keywords": [
+                "species",
+                "interactions",
+                "biotic",
+                "associations"
+            ],
+            "layout": "dataset",
+            "taxa": [
+                "NCBITaxon:9823",
+                "NCBITaxon:11309"
+            ],
+            "title": "Schriml, L. M., Arze, C., Nadendla, S., Ganapathy, A., Felix, V., Mahurkar, A., \u2026 Hall, N. (2009). GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database. Nucleic Acids Research, 38(Database), D754\u2013D764. doi:10.1093/nar/gkp832",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "https://raw.githubusercontent.com/millerse/Wardeh-et-al.-2015/c6e69d5a6f98f6d41161c1cfe6460f2abb777683/interactions.tsv",
+            "browseURL": "http://www.globalbioticinteractions.org/?interactionType=interactsWith&accordingTo=10.1038%2Fsdata.2015.49",
+            "date": "date 2016-09-09",
+            "index": "biocaddie",
+            "keywords": [
+                "species",
+                "interactions",
+                "biotic",
+                "associations"
+            ],
+            "layout": "dataset",
+            "taxa": [
+                "NCBITaxon:64320",
+                "NCBITaxon:9606",
+                "NCBITaxon:7159"
+            ],
+            "title": "Sarah E Miller. 4/18/2016. Species associations from Wardeh, M. et al. Database of host-pathogen and related species interactions, and their global distribution. Sci. Data 2:150049 doi: 10.1038/sdata.2015.49 (2015).",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://datadryad.org/resource/doi:10.5061/dryad.8v2d0",
+            "categories": "Alzheimer's, Mass spectrometry, Alzheimer\u2019s disease, label-free quantitative, cerebrospinal fluid, mass data evaluation, Decyder software, Maxquant software, OpenMS software, PEAKS software, Sieve software",
+            "date": "date 2016-04-06",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "license": "http://creativecommons.org/publicdomain/zero/1.0/, http://datadryad.org/pages/policies",
+            "page": "http://datadryad.org/resource/doi:10.5061/dryad.8v2d0",
+            "taxa": [
+                "NCBITaxon:9606"
+            ],
+            "title": "Analysis of the cerebrospinal fluid proteome in Alzheimer's disease",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://dx.doi.org/10.5061/dryad.br760",
+            "categories": "Tuberculosis, Drug-resistance, Transmission, Disease, Fitness, Household, MDRTB, Population, Epidemiology",
+            "date": "date 2015-06-23",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "license": "http://creativecommons.org/publicdomain/zero/1.0/, http://datadryad.org/pages/policies",
+            "page": "http://dx.doi.org/10.5061/dryad.br760",
+            "taxa": [
+                "NCBITaxon:9606, NCBITaxon:77643"
+            ],
+            "title": "Transmission of Multidrug-Resistant and Drug Susceptible Tuberculosis Within Households: A Prospective Cohort Study",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "https://www.cancergenomeinterpreter.org/biomarkers?download=tsv",
+            "categories": "Cancer Drug_Response",
+            "date": "date 2016-08-26",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "license": "https://www.cancergenomeinterpreter.org/terms",
+            "page": "https://www.cancergenomeinterpreter.org/home",
+            "taxa": [
+                "NCBITaxon:9606"
+            ],
+            "title": "The cancer bioMarkers database",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "http://www.nature.com/nature/journal/v536/n7616/extref/nature19057-s2.zip",
+            "categories": "Gene_Function Essential_for_survival",
+            "date": "date 2016-08-18",
+            "identifier": "doi:10.1038/nature19057",
+            "index": "biocaddie",
+            "layout": "dataset",
+            "page": "http://www.nature.com/nature/journal/v536/n7616/full/nature19057.html",
+            "taxa": [
+                "NCBITaxon:9606"
+            ],
+            "title": "ExAC Loss of Function Intolerant Gene List",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "accessURL": "https://www.facebase.org/data/search/",
+            "date": "date \u20182016-09-08\u2019",
+            "identifier": "biodbcore-000728",
+            "index": "biocaddie",
+            "keywords": [
+                "Biomedical Science",
+                "ChIP-Seq",
+                "Craniofacial Development",
+                "Craniofacial Malformation",
+                "Imaging",
+                "Microarray Data",
+                "RNA-Seq"
+            ],
+            "layout": "dataset",
+            "license": "https://www.facebase.org/methods/policies/",
+            "page": "https://www.facebase.org/",
+            "taxa": [
+                "NCBITaxon:7955",
+                "NCBITaxon:9606",
+                "NCBITaxon:10090"
+            ],
+            "title": "FaceBase",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        },
+        {
+            "Comment on OPT files": "slightly damaged embryo",
+            "Enhancer Name": "mCF73",
+            "Enhancer expression": "positive",
+            "Enhancer location": "Mouse genome mm9, chr14:47230349-47231452",
+            "Nearest craniofacial gene or locus": "BMP4",
+            "Tissues where active": [
+                "branchial arch",
+                "facial mesenchyme",
+                "nose",
+                "limbs",
+                "neural tube"
+            ],
+            "Vista Enhancer ID": "mm387",
+            "accessURL": "https://www.facebase.org/data/record/#1/legacy:dataset/id=4277",
+            "date": "date 2016-09-09",
+            "identifier": "FB00000169",
+            "index": "biocaddie",
+            "keywords": [
+                "Enhancer reporter gene assay"
+            ],
+            "layout": "dataset",
+            "page": "https://www.facebase.org/",
+            "references": [
+                "PMID:18836445"
+            ],
+            "taxa": [
+                "NCBITaxon:10090"
+            ],
+            "title": "Visel Mouse Enhancer Assay",
+            "type": "http://purl.org/dc/dcmitype/Dataset"
+        }
+    ]
+}
