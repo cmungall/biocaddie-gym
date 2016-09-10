@@ -18,7 +18,7 @@ foo:
 # once the above is downloaded, iterate through the results and
 # dump the MDs into the target/ directory
 harvest: 
-	./bin/harvester.py $<
+	./bin/harvester.py -k $(GITHUB_TOKEN) $<
 
 # finally, iterate through all MDs and make a json-ld file and report file
 aggregated-metadata.jsonld: 

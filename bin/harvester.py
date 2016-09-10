@@ -12,6 +12,9 @@ import json
 
 # curl -H "Authorization: token $GITHUB_TOKEN" 'https://api.github.com/search/code?q="index%3A+biocaddie"'
 
+params = {
+    'access_token' : ''
+    }
 
 def main():
 
@@ -20,8 +23,13 @@ def main():
                                      formatter_class=argparse.RawTextHelpFormatter)
 
     parser.add_argument('files',nargs='*')
+    parser.add_argument('-r', '--report', type=str, default='report.md')
+    parser.add_argument('-k', '--key' ,type=str)
+
 
     args = parser.parse_args()
+
+    params['access_token'] = args.key
 
     paths = []
     raws = []
@@ -37,7 +45,7 @@ def main():
 
         for url in urls:
             #travisurls.append(travisurl)
-            with closing(requests.get(url, stream=False)) as resp:
+            with closing(requests.get(url, params, stream=False)) as resp:
                 #print("  Got response for: "+rawurl)
                 # TODO: redirects
                 ok = resp.status_code == 200
@@ -50,30 +58,32 @@ def main():
                 #print(content)
                 f.close()
 
-    f=open('report.md','w')
+    f=open(args.report,'w')
     for url in travisurls:
-        f.write(' * [![Build Status](%s.svg?branch=gh-pages)](%s)' % (url,url))
+        f.write(' * [![Build Status](%s.svg?branch=gh-pages)](%s) %s' % (url,url,url))
         f.write("\n")
     f.close()
 
 def search_repos():
     url = 'https://api.github.com/search/repositories?q=biocaddie+in:readme+fork:true'
     names = []
-    with closing(requests.get(url, stream=False)) as resp:
+    with closing(requests.get(url, params, stream=False)) as resp:
         ok = resp.status_code == 200
-        content = resp.text
-        results = json.loads(content)
-        items = results['items']
-        for item in items:
-            full_name = item['full_name']
-            names.append(full_name)
-            
+        if ok:
+            content = resp.text
+            results = json.loads(content)
+            items = results['items']
+            for item in items:
+                full_name = item['full_name']
+                names.append(full_name)
+        else:
+            print("oops: "+url + "\n" + resp.text)            
     return names
     
 def get_md_urls(repo):
     url = 'https://api.github.com/repos/'+repo+'/contents/_metadata?ref=gh-pages'
     urls = []
-    with closing(requests.get(url, stream=False)) as resp:
+    with closing(requests.get(url, params, stream=False)) as resp:
         ok = resp.status_code == 200
         if ok:
             print("Fetching files from "+url)
@@ -82,7 +92,7 @@ def get_md_urls(repo):
             for item in results:
                 urls.append(item['download_url'])
         else:
-            print("oops: "+url)
+            print("oops: "+url + "\n" + resp.text)
     return urls
             
             
