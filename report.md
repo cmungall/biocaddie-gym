@@ -1,10 +1,14 @@
  * [![Build Status](https://travis-ci.org/biodatasets/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/biodatasets/mybiocaddie) https://travis-ci.org/biodatasets/mybiocaddie
  * [![Build Status](https://travis-ci.org/cmungall/monarch-metadata.svg?branch=gh-pages)](https://travis-ci.org/cmungall/monarch-metadata) https://travis-ci.org/cmungall/monarch-metadata
- * [![Build Status](https://travis-ci.org/cmungall/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/cmungall/mybiocaddie) https://travis-ci.org/cmungall/mybiocaddie
  * [![Build Status](https://travis-ci.org/OHSU-Ontology-Development-Group/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/OHSU-Ontology-Development-Group/mybiocaddie) https://travis-ci.org/OHSU-Ontology-Development-Group/mybiocaddie
  * [![Build Status](https://travis-ci.org/DoctorBud/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/DoctorBud/mybiocaddie) https://travis-ci.org/DoctorBud/mybiocaddie
+ * [![Build Status](https://travis-ci.org/jnguyenx/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/jnguyenx/mybiocaddie) https://travis-ci.org/jnguyenx/mybiocaddie
+ * [![Build Status](https://travis-ci.org/mellybelly/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/mellybelly/mybiocaddie) https://travis-ci.org/mellybelly/mybiocaddie
+ * [![Build Status](https://travis-ci.org/satwik77/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/satwik77/mybiocaddie) https://travis-ci.org/satwik77/mybiocaddie
  * [![Build Status](https://travis-ci.org/jmcmurry/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/jmcmurry/mybiocaddie) https://travis-ci.org/jmcmurry/mybiocaddie
  * [![Build Status](https://travis-ci.org/TomConlin/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/TomConlin/mybiocaddie) https://travis-ci.org/TomConlin/mybiocaddie
- * [![Build Status](https://travis-ci.org/nicolevasilevsky/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/nicolevasilevsky/mybiocaddie) https://travis-ci.org/nicolevasilevsky/mybiocaddie
+ * [![Build Status](https://travis-ci.org/geneontology/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/geneontology/mybiocaddie) https://travis-ci.org/geneontology/mybiocaddie
  * [![Build Status](https://travis-ci.org/globalbioticinteractions/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/globalbioticinteractions/mybiocaddie) https://travis-ci.org/globalbioticinteractions/mybiocaddie
+ * [![Build Status](https://travis-ci.org/nicolevasilevsky/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/nicolevasilevsky/mybiocaddie) https://travis-ci.org/nicolevasilevsky/mybiocaddie
  * [![Build Status](https://travis-ci.org/kshefchek/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/kshefchek/mybiocaddie) https://travis-ci.org/kshefchek/mybiocaddie
+ * [![Build Status](https://travis-ci.org/EnvironmentOntology/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/EnvironmentOntology/mybiocaddie) https://travis-ci.org/EnvironmentOntology/mybiocaddie

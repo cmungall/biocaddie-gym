@@ -24,6 +24,7 @@ def main():
     parser_n = subparsers.add_parser('concat', help='concat metadata yamls')
     parser_n.add_argument('-i', '--include', help='yml file to include for header')
     parser_n.add_argument('-o', '--output', help='output yaml')
+    parser_n.add_argument('-r', '--report', help='report yaml')
     parser_n.add_argument('-c', '--context', help='jsonld context', default='biocaddie-context.jsonld')
     parser_n.set_defaults(function=concat_metadata_yaml)
     parser_n.add_argument('files',nargs='*')
@@ -72,7 +73,6 @@ def concat_metadata_yaml(args):
     Assumes that args.files is already sorted alphabetically.
     """
     objs = []
-    foundry = []
     library = []
     obsolete = []
     cfg = {}
@@ -87,11 +87,9 @@ def concat_metadata_yaml(args):
         (obj, md) = load_md(fn)
         if 'is_obsolete' in obj and obj['is_obsolete'] == True:
           obsolete.append(obj)
-        elif 'in_foundry_order' in obj:
-          foundry.append(obj)
         else:
           library.append(obj)
-    objs = foundry + library + obsolete
+    objs = library + obsolete
 
     # hack 
     dateFields = ['date']
@@ -105,23 +103,22 @@ def concat_metadata_yaml(args):
         cfg['@context'] = ctxt['@context']
     f = open(args.output, 'w')
     f.write(dumps(cfg, sort_keys=True, indent=4, separators=(',', ': ')))
+    f.close()
     #f.write(yaml.dump(cfg))
+
+    mkey = {}
+    for obj in objs:
+        for k in obj.keys():
+            if k not in mkey:
+                mkey[k] = 0
+            mkey[k] = mkey[k] +1
+    if args.report:
+        f = open(args.report, 'w')
+        f.write(dumps(mkey, sort_keys=True, indent=4, separators=(',', ': ')))
+        f.close()
+            
     return cfg
 
-
-def concat_principles_yaml(args):
-    objs = []
-    cfg = {}
-    if (args.include):
-        f = open(args.include, 'r') 
-        cfg = yaml.load(f.read())
-    for fn in args.files:
-        (obj, md) = load_md(fn)
-        objs.append(obj)
-    cfg['principles'] = objs
-    f = open(args.output, 'w') 
-    f.write(yaml.dump(cfg))
-    return cfg
 
 
 def load_md(fn):
@@ -155,6 +152,9 @@ def extract(mdtext):
             else:
                 mlines.append(line)
     yamltext = "\n".join(ylines)
+    
+    # temp hack to get around syntax errors of some files
+    yamltext.replace("\t","  ")
     obj = yaml.load(yamltext)
     return obj, "\n".join(mlines)
 

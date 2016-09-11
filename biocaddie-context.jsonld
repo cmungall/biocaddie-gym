@@ -1,6 +1,7 @@
 {
     "@context": {
         "dc": "http://purl.org/dc/terms/",
+        "dce": "http://purl.org/dc/elements/1.1/",
         "dcat": "http://www.w3.org/ns/dcat#",
         "dct": "http://purl.org/dc/terms/",
         "faldo": "http://biohackathon.org/resource/faldo#",
@@ -13,16 +14,95 @@
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "void": "http://rdfs.org/ns/void#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "RO": "http://purl.obolibrary.org/obo/RO_",
+        "NCBITaxon": "http://purl.obolibrary.org/obo/NCBITaxon_",
 
         "dctypes": "http://purl.org/dc/dcmitype/",
         "pav": "http://purl.org/pav/",
+
+        "datasets": "@graph",
+
+        "id": "@id",
+
+        "label": "rdfs:label",
+        "seeAlso": "rdfs:seeAlso",
+        "comment": "rdfs:comment",
+        "description": "dce:description",
+        "source": "dce:source",
+        "publisher": "dce:publisher",
+
+        "language": "dct:language",
+        "license": "dct:license",
+        "domain": "dct:theme",
+        "format": "dct:format",
+        "products": "dcat:distribution",
+        "Class": "owl:Class",
+
+        "type": {
+            "@id": "rdf:type",
+            "@type": "@id"
+        },
+        "created": {
+            "@id": "dct:created",
+            "@type": "xsd:dateTime"
+        },
+        "creator": {
+            "@id": "dct:creator",
+            "@type": "@id"
+        },
+        "depiction": {
+            "@id": "foaf:depiction",
+            "@type": "@id"
+        },
+        "logo": {
+            "@id": "schemaorg:logo",
+            "@type": "@id"
+        },  
+        "audience": {
+            "@id": "schemaorg:audience",
+            "@type": "schemaorg:Audience"
+        },  
+        "contact": {
+            "@id": "dcat:contactPoint",
+            "@type": "foaf:Person"
+        },
+        "email": "foaf:mbox",
+        "publisher": "dct:publisher",
         
-        "datasets": "dct:FOOBAR",
+        "taxa" : {
+            "@id": "RO:0002162",
+            "@type": "@id"
+        },
+        "title": "dce:title",
+
+        "homepage": {
+            "@id": "foaf:homepage",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "foaf:page",
+            "@type": "@id"
+        },
+        "twitter": {
+            "@id": "foaf:account",
+            "@type": "@id"
+        },
+        "facebook": {
+            "@id": "foaf:account",
+            "@type": "@id"
+        },
+        "google_plus": {
+            "@id": "foaf:account",
+            "@type": "@id"
+        },
+        "is_about" : "IAO:0000136",
+        
         "identifier": "dct:identifier",
         "issued" : "dct:issued",
-        "description" : "dc:description",
-        "license" : "dct:license",
-        "page" : "foaf:page",
+        "author" : "dc:author",
+        "rights" : "dc:rights",
+        "keywords" : "dc:keywords",
+        "browseURL" : "foaf:page",
         "accessURL" : "dcat:accessURL"
     }
 }

@@ -1,3 +1,5 @@
+all: rdf/aggregated-metadata.ttl
+
 # This is a stub for now
 test:
 	echo ok
@@ -5,21 +7,43 @@ test:
 foo:
 	echo $(GITHUB_TOKEN)
 
-# Do a GitHub API query to fetch the locations of all repos with the biocaddie index tag
-#
-# Note you need a github token. Set either the environment var, or as a makefile var
-# see also the samples/ directory for a sample.
-#
-# NOTE: if we instead place a magic token in the README, we can do a repo
-# search instead, no API key required
-#harvested-repos.json:
-#	GITHUB_TOKEN=$(GITHUB_TOKEN) ./bin/harvest-github-metadata.sh > $@
-
-# once the above is downloaded, iterate through the results and
-# dump the MDs into the target/ directory
+# 1. Do a GitHub API query to fetch the locations of all repos with the biocaddie index tag
+# 2. Iterate through results, copying source md file into target/ dir
 harvest: 
 	./bin/harvester.py -k $(GITHUB_TOKEN) $<
 
-# finally, iterate through all MDs and make a json-ld file and report file
+# after harvest,
+# iterate through all MDs and make a json-ld file and report file
 aggregated-metadata.jsonld: 
-	./bin/bc-md-processor.py concat target/*.md -o $@ > harvest.md
+	./bin/bc-md-processor.py concat target/*.md -o $@ -r key-report.json
+
+rdf/%.ttl: %.jsonld
+	riot $< > $@.tmp && mv $@.tmp $@
+
+# warning: hardcodes assumptions about directory layout
+sync:
+	cp target/*.md ../mybiocaddie-aggregator/_metadata
+
+
+## ----------------------------------------
+## LOADING BLAZEGRAPH
+## ----------------------------------------
+
+BGJAR = jars/blazegraph.jar
+
+$(BGJAR):
+	mkdir -p jars && cd jars && curl -O http://tenet.dl.sourceforge.net/project/bigdata/bigdata/2.1.1/blazegraph.jar
+.PRECIOUS: $(BGJAR)
+
+BG = java -XX:+UseG1GC -Xmx12G -cp $(BGJAR) com.bigdata.rdf.store.DataLoader -defaultGraph http://geneontology.org/rdf/ conf/blazegraph.properties
+load-blazegraph: $(BGJAR)
+	$(BG) rdf
+
+rmcat:
+	rm rdf/catalog-v001.xml
+
+rdf/%-bg-load: rdf/%.rdf
+	$(BG) $<
+
+bg-start:
+	java -server -Xmx8g -Dbigdata.propertyFile=conf/blazegraph.properties -jar $(BGJAR)
